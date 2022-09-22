@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --firstColor: #633A82;
+    --secondColor: #DA7F8F;
+    --thirdColor: #F7BE16;
+    --hoverColor: #F34573;
+    --shadowColor: #888888;
+    --boxPosition: absolute;
+    --boxHeight: 300px;
+    --boxWidth: 300px;
+    --boxPadding: 40px;
+    --boxBorderRadius: 10px;
+}
+
+.box-1{
+    position: var(--boxPosition);
+    height: var(--boxHeight);
+    width: var(--boxWidth);
+    padding: var(--boxPadding);
+    background-color: var(--firstColor);
+    border-radius: var(--boxBorderRadius);
+    top: 50px;
+    left: 30px;
+}
+.box-2{
+    position: var(--boxPosition);
+    height: var(--boxHeight);
+    width: var(--boxWidth);
+    padding: var(--boxPadding);
+    background-color: var(--secondColor);
+    border-radius: var(--boxBorderRadius);
+    top: 50px;
+    left: 360px;
+}
+.box-3{
+    position: var(--boxPosition);
+    height: var(--boxHeight);
+    width: var(--boxWidth);
+    padding: var(--boxPadding);
+    background-color: var(--thirdColor);
+    border-radius: var(--boxBorderRadius);
+    top: 50px;
+    left: 690px;
+}
+div:hover{
+    margin: 5px;
+    height: 305px;
+    width: 305px;
+    padding: 60px;
+    background-color: var(--hoverColor);
+    transition: 0.3s;
+    border-radius: 12px;
+    /* border: 1px solid; */
+    box-shadow: 5px 10px 18px var(--shadowColor);
+}
+h1{
+    text-align: center;
+}
